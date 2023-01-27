@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using TodoList.Model;
+using TodoList.API.Model;
 
-namespace TodoList.Infra;
+namespace TodoList.API.Context;
 
 public class TodoContext : DbContext
 {
@@ -12,8 +12,8 @@ public class TodoContext : DbContext
 
     public DbSet<TodoItem> TodoItems { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseInMemoryDatabase("TodoDb");
-    }
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //{
+    //    optionsBuilder.UseInMemoryDatabase("TodoDb");
+    //}
 }
