@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using TodoList.API.Context;
+using TodoList.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
 
